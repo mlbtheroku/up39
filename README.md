@@ -1,6 +1,6 @@
 
 <h1 align="center">
-  <b> ᴜᴘʟᴏᴀᴅᴇʀ ʙᴏᴛ 𝟸.ᴏ </b>
+  <b> ᴜᴘʟᴏᴀᴅᴇʀ ʙᴏᴛ ᴠ𝟹</b>
 </h1>
 
 <p align="center" > <img alt="GitHub forks" src="https://img.shields.io/github/forks/PlanetBots/Uploader-Bot-2.0?label=%F0%9F%8D%B4Forks&logoColor=blue&style=social">
