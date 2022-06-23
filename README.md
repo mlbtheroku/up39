@@ -28,6 +28,7 @@ Check How To Make MONGODB URL on YouTube `https://youtu.be/aXlF80Cn7iU`
 
 * `UPDATES_CHANNEL` Get it From @TheIdentityBot
 
+* `Must Edit start.sh`
 
 <h1 align="left">
   <b> 𝙳𝙴𝙿𝙻𝙾𝚈 𝙾𝙽 𝙷𝙴𝚁𝙾𝙺𝚄 </b>
