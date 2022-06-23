@@ -13,19 +13,20 @@
   
 𝚁𝚎𝚚𝚞𝚒𝚛𝚎𝚍 𝚅𝚊𝚛𝚒𝚊𝚋𝚕𝚎𝚜 🔊
 
-* `APP_ID`
+* `APP_ID` Get it From mytelegram.org
 
-* `API_HASH`
+* `API_HASH` Get it From mytelegram.org
 
-* `BOT_TOKEN`
+* `BOT_TOKEN` Get it From BotFather
 
-* `DATABASE_URL`
+* `DATABASE_URL` Get It From MongoDB Web
+Check How To Make MongoDB UrI on YouTube `https://youtu.be/aXlF80Cn7iU`
 
-* `OWNER_ID`
+* `OWNER_ID` Get it From @TheIdentityBot
 
-* `LOG_CHANNEL`
+* `LOG_CHANNEL` Create a Private Channel and Send Any Message To That Channel and Forward to @TheIdentityBot to Get Channel Id
 
-* `UPDATES_CHANNEL` 
+* `UPDATES_CHANNEL` Get it From @TheIdentityBot
 
 
 <h1 align="left">
