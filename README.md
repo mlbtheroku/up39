@@ -30,6 +30,8 @@ Check How To Make MONGODB URL on YouTube `https://youtu.be/aXlF80Cn7iU`
 
 * `Must Edit start.sh`
 
+`Supported Pyrogram 2.0`
+
 <h1 align="left">
   <b> 𝙳𝙴𝙿𝙻𝙾𝚈 𝙾𝙽 𝙷𝙴𝚁𝙾𝙺𝚄 </b>
 </h1>
