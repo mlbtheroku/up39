@@ -20,7 +20,7 @@
 * `BOT_TOKEN` Get it From BotFather
 
 * `DATABASE_URL` Get It From MongoDB Web
-Check How To Make MongoDB UrI on YouTube `https://youtu.be/aXlF80Cn7iU`
+Check How To Make MONGODB URL on YouTube `https://youtu.be/aXlF80Cn7iU`
 
 * `OWNER_ID` Get it From @TheIdentityBot
 
