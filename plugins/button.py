@@ -121,7 +121,7 @@ async def youtube_dl_call_back(bot, update):
             "--ignore-no-formats-error",
             "--embed-subs",
             "-f",
-            "--prefer-free-formats",
+            youtube_dl_format,
             "--prefer-ffmpeg",
             youtube_dl_url,
             "-o",
