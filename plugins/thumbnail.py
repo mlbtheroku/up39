@@ -27,7 +27,7 @@ import asyncio
 from asyncio import TimeoutError
 from pyrogram.errors import MessageNotModified
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message, CallbackQuery, ForceReply
-from functions.forcesub import handle_force_subscribe
+from plugins.functions.forcesub import handle_force_subscribe
 from plugins.database.database import db
 from plugins.config import Config
 from plugins.database.add import add_user_to_database
