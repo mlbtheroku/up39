@@ -9,7 +9,7 @@ logger = logging.getLogger(__name__)
 import os
 from plugins.config import Config
 
-from pyrogram import Client as Planetbots
+from pyrogram import Client as PlanetBots
 from pyrogram import filters
 logging.getLogger("pyrogram").setLevel(logging.WARNING)
 
