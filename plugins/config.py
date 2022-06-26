@@ -60,3 +60,4 @@ class Config(object):
     ONE_BY_ONE = []
     TODAY_USERS = []
     TIME_GAP = int(os.environ.get("TIME_GAP", 2))
+    RATE_MSG_ID = int(os.environ.get("RATE_MSG_ID", 123))
