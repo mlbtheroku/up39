@@ -2,119 +2,94 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 class Translation(object):
 
-    START_TEXT = """
-👋 Hᴇʏ {} ♡
-
-I ᴀᴍ ᴛᴇʟᴇɢʀᴀᴍ ᴍᴏsᴛ ᴘᴏᴡᴇʀғᴜʟ ᴜʀʟ ᴜᴘʟᴏᴀᴅᴇʀ ʙᴏᴛ
-
-Usᴇ ʜᴇʟᴘ ʙᴜᴛᴛᴏɴ ᴛᴏ ᴋɴᴏᴡ ʜᴏᴡ ᴛᴏ ᴜsᴇ ᴍᴇ
-
-ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : [Tᴇʟʟʏʙᴏᴛs](https://telegram.me/TellyBots)
-"""
-    HELP_TEXT = """
-ʟɪɴᴋ ᴛᴏ ᴍᴇᴅɪᴀ ᴏʀ ғɪʟᴇ
-
-➠ sᴇɴᴅ ᴀ ʟɪɴᴋ ғᴏʀ ᴜᴘʟᴏᴀᴅ ᴛᴏ ᴛᴇʟᴇɢʀᴀᴍ ғɪʟᴇ ᴏʀ ᴍᴇᴅɪᴀ.
-
-sᴇᴛ ᴛʜᴜᴍʙɴᴀɪʟ
-
-➠ sᴇɴᴅ ᴀ ᴘʜᴏᴛᴏ ᴛᴏ ᴍᴀᴋᴇ ɪᴛ ᴀs ᴘᴇʀᴍᴀɴᴇɴᴛ ᴛʜᴜᴍʙɴᴀɪʟ.
-
-ᴅᴇʟᴇᴛɪɴɢ ᴛʜᴜᴍʙɴᴀɪʟ
-
-➠ sᴇɴᴅ /delthumb ᴛᴏ ᴅᴇʟᴇᴛᴇ ᴛʜᴜᴍʙɴᴀɪʟ.
-
-sᴇᴛᴛɪɴɢs
-
-➠ ᴄᴏɴғɪɢᴜʀᴇ ᴍʏ sᴇᴛᴛɪɴɢs ᴛᴏ ᴄʜᴀɴɢᴇ ᴜᴘʟᴏᴀᴅ ᴍᴏᴅᴇ
-
-sʜᴏᴡ ᴛʜᴜᴍʙɴᴀɪʟ
-
-➠ sᴇɴᴅ /showthumb ᴛᴏ ᴠɪᴇᴡ ᴄᴜsᴛᴏᴍ ᴛʜᴜᴍʙɴᴀɪʟ.
-
-ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : [Tᴇʟʟʏʙᴏᴛs](https://telegram.me/TellyBots)
- 
-"""
-    ABOUT_TEXT = """
-**Mʏ ɴᴀᴍᴇ** : [ᴜᴘʟᴏᴀᴅᴇʀ ʙᴏᴛ](http://t.me/TellyUploaderRobot)
-
-**Cʜᴀɴɴᴇʟ** : [Tᴇʟʟʏʙᴏᴛs](https://t.me/TellyBots)
-
-**Vᴇʀꜱɪᴏɴ** : [2.0 ʙᴇᴛᴀ](https://t.me/TellyUploaderRobot)
-
-**Sᴏᴜʀᴄᴇ** : [ᴄʟɪᴄᴋ ʜᴇʀᴇ](https://t.me/tellybots_digital)
-
-**Sᴇʀᴠᴇʀ** : [ʜᴇʀᴏᴋᴜ](https://heroku.com/)
-
-**Lᴀɴɢᴜᴀɢᴇ :** [Pʏᴛʜᴏɴ 3.10.2](https://www.python.org/)
-
-**Fʀᴀᴍᴇᴡᴏʀᴋ :** [ᴘʏʀᴏɢᴀᴍ 2.0.30](https://docs.pyrogram.org/)
-
-**Dᴇᴠᴇʟᴏᴘᴇʀ :** [Tᴇʟʟʏʙᴏᴛs](https://t.me/tellybots)
-
-**ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ :** [NᴀʏsᴀBᴏᴛs](https://t.me/NaysaBots)
-
-"""
+    START_TEXT = """<b>Hey, {}!</b>
+    
+<i>This is a URL Upload Bot!</i>
+<i>Please send me any Streaming (URL) Link, Then I will upload to Telegram as File/Video/Team Drive.</i>
+ℹ️Help <i>for more details...</i>
+© @Super_botz"""
+    HELP_TEXT = """<b>How to use me?</b>
+    
+Send Streaming (URL) link from <a href=https://github.com/yt-dlp/yt-dlp/blob/master/supportedsites.md>Supported websites</a>.
+   
+   <b>Example: (Without Custom File Name)</b>
+       <code>https://m.youtube.com/watch?v=5wSi4KC70Gw</code>
+       
+   <b>Example: (With Custom File Name)</b>
+       <code>https://m.youtube.com/watch?v=5wSi4KC70Gw|How_to_download_zee5_and_mxplayer</code>
+   
+</i>
+--------
+Send /me to know current plan details
+© @Super_botz"""
+    ABOUT_TEXT = """<b>➥ My Name :</b><code> UrI UpIoader R0b0t</code>
+<b>➥ Creator :</b> <a href="https://t.me/iam_durov_bot">Durov</a>
+<b>➥ Credits :</b> <code>Everyone in this journey</code>
+<b>➥ Language :</b> <code>Python3</code>
+<b>➥ Library :</b> <a href="https://docs.pyrogram.org/">Pyrogram asyncio</a>
+<b>➥ Source Code :</b> <a href="https://t.me/super_botz">👉 Click Here</a>
+<b>➥ Server : </b><code>Heroku</code>
+<b>➥ Build Status : </b><code>V0.0.1</code>"""
 
 
     PROGRESS = """
-🔰 Sᴘᴇᴇᴅ : {3}/s\n\n
-🌀 Dᴏɴᴇ : {1}\n\n
-🎥 Tᴏᴛᴀʟ sɪᴢᴇ  : {2}\n\n
-⏳ Tɪᴍᴇ ʟᴇғᴛ : {4}\n\n
+🏃 Speed : {3}/s\n\n
+✅ Done : {1}\n\n
+🎥 Total size  : {2}\n\n
+⏳ Time left : {4}\n\n
 """
 
 
     START_BUTTONS = InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton('🗜️ sᴇᴛᴛɪɴɢs', callback_data='OpenSettings')
+        InlineKeyboardButton('⚙️ Options', callback_data='OpenSettings')
         ],[
-        InlineKeyboardButton('❔ ʜᴇʟᴘ', callback_data='help'),
-        InlineKeyboardButton('👨‍🚒 ᴀʙᴏᴜᴛ', callback_data='about')
+        InlineKeyboardButton('ℹ️ Help', callback_data='help'),
+        InlineKeyboardButton('👨‍ About', callback_data='about')
         ],[
-        InlineKeyboardButton('♨️ ᴄʟᴏsᴇ', callback_data='close')
+        InlineKeyboardButton('🔐 Close', callback_data='close')
         ]]
     )
     HELP_BUTTONS = InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton('🏡 ʜᴏᴍᴇ', callback_data='home'),
-        InlineKeyboardButton('👨‍🚒 ᴀʙᴏᴜᴛ', callback_data='about')
+        InlineKeyboardButton('🏡 Main menu', callback_data='home'),
+        InlineKeyboardButton('👨‍ About', callback_data='about')
         ],[
-        InlineKeyboardButton('♨️ ᴄʟᴏsᴇ', callback_data='close')
+        InlineKeyboardButton('🔐 Close', callback_data='close')
         ]]
     )
     ABOUT_BUTTONS = InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton('🏡 ʜᴏᴍᴇ', callback_data='home'),
-        InlineKeyboardButton('❔ ʜᴇʟᴘ', callback_data='help')
+        InlineKeyboardButton('🏡 Main menu', callback_data='home'),
+        InlineKeyboardButton('ℹ️ Help', callback_data='help')
         ],[
-        InlineKeyboardButton('♨️ ᴄʟᴏsᴇ', callback_data='close')
+        InlineKeyboardButton('🔐 Close', callback_data='close')
         ]]
     )
     BUTTONS = InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton('♨️ ᴄʟᴏsᴇ', callback_data='close')
+        InlineKeyboardButton('🔐 Close', callback_data='close')
         ]]
     )
-    TEXT = "sᴇɴᴅ ᴍᴇ ᴀɴʏ ᴄᴜsᴛᴏᴍ ᴛʜᴜᴍʙɴᴀɪʟ ᴛᴏ sᴇᴛ ɪᴛ"
-    IFLONG_FILE_NAME = " Only 64 characters can be named . "
+    TEXT = "Send me any images to set custome thumbnail"
+    IFLONG_FILE_NAME = "File Name limited to 64 Chars/."
     RENAME_403_ERR = "Sorry. You are not permitted to rename this file."
     ABS_TEXT = " Please don't be selfish."
     UPGRADE_TEXT = "<b>No preminum plans available in this bot </b>  /help for Details"
-    FORMAT_SELECTION = "Nᴏᴡ Sᴇʟᴇᴄᴛ Tʜᴇ Dᴇsɪʀᴇᴅ Fᴏʀᴍᴀᴛ ᴏʀ Fɪʟᴇ 🗄️ Sɪᴢᴇ ᴛᴏ Uᴘʟᴏᴀᴅ"
+    FORMAT_SELECTION = "👇 Select appropriate format"
     SET_CUSTOM_USERNAME_PASSWORD = """"""
     NOYES_URL = "@robot URL detected. Please use https://shrtz.me/PtsVnf6 and get me a fast URL so that I can upload to Telegram, without me slowing down for other users."
-    DOWNLOAD_FILE = "📥 Downloading  File "
+    DOWNLOAD_FILE = "📥 Downloading in progress"
     UPLOAD_FILE = " UploadinG 📤 \n\n To  transfer.sh "
     ANNO_UPLOAD = " UploadinG📤 \n\n To  anonfiles.com "
     BAY_UPLOAD = " UploadinG📤 \n\n To  bayfiles.com "
     GO_FILE_UPLOAD = " 📤UploadinG📤 \n\n To  gofile.io "
     DOWNLOAD_START = "Dᴏᴡɴʟᴏᴀᴅɪɴɢ ᴛᴏ ᴍʏ sᴇʀᴠᴇʀ ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ  ⏳"
-    UPLOAD_START = "📤 Uᴘʟᴏᴀᴅɪɴɢ Pʟᴇᴀsᴇ Wᴀɪᴛ"
+    UPLOAD_START = "📤 Upload in progress"
     RCHD_BOT_API_LIMIT = "size greater than maximum allowed size (50MB). Neverthless, trying to upload."
-    RCHD_TG_API_LIMIT = "Downloaded in {} seconds.\nDetected File Size: {}\nSorry. But, I cannot upload files greater than 2GB due to Telegram API limitations."
-    AFTER_SUCCESSFUL_UPLOAD_MSG = " JOIN : https://t.me/TGBotsCollection\nFor the List of Telegram Bots"
-    AFTER_SUCCESSFUL_UPLOAD_MSG_WITH_TS = "Dᴏᴡɴʟᴏᴀᴅᴇᴅ ɪɴ {} sᴇᴄᴏɴᴅs.\n\nTʜᴀɴᴋs Fᴏʀ Usɪɴɢ Mᴇ\n\nUᴘʟᴏᴀᴅᴇᴅ ɪɴ {} sᴇᴄᴏɴᴅs"
+    RCHD_TG_API_LIMIT = "😐 Downloaded in {} seconds.\nDetected File Size: {}\nSorry. But, I cannot upload files greater than 2GB due to Telegram API limitations."
+    AFTER_SUCCESSFUL_UPLOAD_MSG = "😍 Thanks for using @Super_Botz"
+    AFTER_SUCCESSFUL_UPLOAD_MSG_WITH_TS = "Downloaded in {} sec.\n\nUploaded in {} sec"
     NOT_AUTH_USER_TEXT = "Please /upgrade your subscription."
     NOT_AUTH_USER_TEXT_FILE_SIZE = "Detected File Size: {}. Free Users can only upload: {}\nPlease /upgrade your subscription.\nIf you think this is a bug, please contact <a href='https://telegram.dog/ThankTelegram'>@SpEcHlDe</a>"
     SAVED_CUSTOM_THUMB_NAIL = "Cᴜsᴛᴏᴍ ᴠɪᴅᴇᴏ / ғɪʟᴇ ᴛʜᴜᴍʙɴᴀɪʟ sᴀᴠᴇᴅ. Tʜɪs ɪᴍᴀɢᴇ ᴡɪʟʟ ʙᴇ ᴜsᴇᴅ ɪɴ ᴛʜᴇ ᴠɪᴅᴇᴏ / ғɪʟᴇ."
@@ -122,9 +97,9 @@ sʜᴏᴡ ᴛʜᴜᴍʙɴᴀɪʟ
     FF_MPEG_DEL_ETED_CUSTOM_MEDIA = "✅ Media cleared succesfully."
     SAVED_RECVD_DOC_FILE = "Document Downloaded Successfully."
     CUSTOM_CAPTION_UL_FILE = " "
-    NO_CUSTOM_THUMB_NAIL_FOUND = "Nᴏ ᴄᴜsᴛᴏᴍ ᴛʜᴜᴍʙɴᴀɪʟ ғᴏᴜɴᴅ"
+    NO_CUSTOM_THUMB_NAIL_FOUND = "404 :- Custom thumbnail not found"
     NO_VOID_FORMAT_FOUND = "ERROR... <code>{}</code>"
-    FILE_NOT_FOUND = "Error, File not Found!!"
+    FILE_NOT_FOUND = "404 :- File not Found!!"
     USER_ADDED_TO_DB = "User <a href='tg://user?id={}'>{}</a> added to {} till {}."
     SOMETHING_WRONG = "<code>Something Wrong. Try again.</code>"
     REPLY_TO_DOC_GET_LINK = "Reply to a Telegram media to get High Speed Direct Download Link"
@@ -158,8 +133,8 @@ You can use /rename command after receiving file to rename it with custom thumbn
 Free users only 1 request per 30 minutes.
 /upgrade or Try 1800 seconds later."""
     SLOW_URL_DECED = "Gosh that seems to be a very slow URL. Since you were screwing my home, I am in no mood to download this file. Meanwhile, why don't you try this:==> https://shrtz.me/PtsVnf6 and get me a fast URL so that I can upload to Telegram, without me slowing down for other users."
-    FORCE_SUBSCRIBE_TEXT = "<code>Sorry Dear You Must Join My Updates Channel for using me 😌😉....</code>"
+    FORCE_SUBSCRIBE_TEXT = "<code>Dear user, \n    Sorry you must join my updates channel for using me.</code>"
     BANNED_USER_TEXT = "<code>You are Banned!</code>"
-    CHECK_LINK = "Pʀᴏᴄᴇssɪɴɢ ʏᴏᴜʀ ʟɪɴᴋ ⌛"
+    CHECK_LINK = "⌛ Analysing...!"
 
 
