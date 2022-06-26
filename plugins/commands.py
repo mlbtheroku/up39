@@ -47,7 +47,7 @@ async def rate(bot, update):
 async def me(bot, update):
     await bot.send_message(
               chat_id=update.chat.id,
-              text="Telegram ID : {}".format(update.chat.id),
+              text="Telegram ID : {}".format(update.from_user.id),
               parse_mode="html",
               disable_web_page_preview=True
     )
