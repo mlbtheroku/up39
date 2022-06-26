@@ -41,7 +41,7 @@ async def start(bot, update):
 
 @Client.on_message(filters.command(["rate"]) & filters.private)
 async def rate(bot, update):
-            await bot.forward_messages(update.chat.id, "@Super_botz", 123)
+            await bot.forward_messages(update.chat.id, "@Super_botz", Config.RATE_MSG_ID)
         
 @Client.on_message(filters.command(["me"]) & filters.private)
 async def me(bot, update):
@@ -49,6 +49,5 @@ async def me(bot, update):
               chat_id=update.chat.id,
               text="Telegram ID : {}".format(update.chat.id),
               parse_mode="html",
-              disable_web_page_preview=True,
-              reply_to_message_id=update.message_id
+              disable_web_page_preview=True
     )
