@@ -87,7 +87,7 @@ async def delete_thumbnail(bot, update):
 @Client.on_message(filters.command("showthumb") )
 async def viewthumbnail(bot, update):
     if not update.from_user:
-        return await update.reply_text("I don't know about you sar :(")
+        return await update.reply_text("😬 Something went wrong with your profile at telegram or Pyrogram side.")
     await add_user_to_database(bot, update) 
     if Config.UPDATES_CHANNEL:
       fsub = await handle_force_subscribe(bot, update)
@@ -98,9 +98,9 @@ async def viewthumbnail(bot, update):
         await bot.send_photo(
         chat_id=update.chat.id,
         photo=thumbnail,
-        caption=f"ʏᴏᴜʀ ᴄᴜʀʀᴇɴᴛ sᴀᴠᴇᴅ ᴛʜᴜᴍʙɴᴀɪʟ 🦠",
+        caption=f"👆 This is your Custom Thumbnail",
         reply_markup=InlineKeyboardMarkup(
-                    [[InlineKeyboardButton("🗑️ ᴅᴇʟᴇᴛᴇ ᴛʜᴜᴍʙɴᴀɪʟ", callback_data="deleteThumbnail")]]
+                    [[InlineKeyboardButton("🗑️ Delete Thumbnail", callback_data="deleteThumbnail")]]
                 ),
         reply_to_message_id=update.id)
     else:
