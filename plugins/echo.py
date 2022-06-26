@@ -45,7 +45,7 @@ async def echo(bot, update):
         except Exception as error:
             print(error)
     if not update.from_user:
-        return await update.reply_text("I don't know about you sar :(")
+        return await update.reply_text("😬 Something went wrong with your profile at telegram or Pyrogram side.")
     await add_user_to_database(bot, update)
 
     if Config.UPDATES_CHANNEL:
@@ -122,7 +122,7 @@ async def echo(bot, update):
     logger.info(command_to_exec)
     chk = await bot.send_message(
             chat_id=update.chat.id,
-            text=f'ᴘʀᴏᴄᴇssɪɴɢ ʏᴏᴜʀ ʟɪɴᴋ ⌛',
+            text=f'⌛ Analysing...!',
             disable_web_page_preview=True,
             reply_to_message_id=update.id,
             parse_mode=enums.ParseMode.HTML
@@ -142,7 +142,7 @@ async def echo(bot, update):
     # https://github.com/rg3/youtube-dl/issues/2630#issuecomment-38635239
     if e_response and "nonnumeric port" not in e_response:
         # logger.warn("Status : FAIL", exc.returncode, exc.output)
-        error_message = e_response.replace("please report this issue on https://yt-dl.org/bug . Make sure you are using the latest version; see  https://yt-dl.org/update  on how to update. Be sure to call youtube-dl with the --verbose flag and include its complete output.", "")
+        error_message = e_response.replace("Unsupported UrI !", "")
         if "This video is only available for registered users." in error_message:
             error_message += Translation.SET_CUSTOM_USERNAME_PASSWORD
         await chk.delete()
@@ -219,7 +219,9 @@ async def echo(bot, update):
                 cb_string = "{}|{}|{}|{}".format("audio", "320k", "mp3", randem)
                 inline_keyboard.append([
                     InlineKeyboardButton(
-                        "🎵 ᴍᴘ𝟹 " + "(" + "64 ᴋʙᴘs" + ")", callback_data=cb_string_64.encode("UTF-8")),
+                        "🎵 ᴍᴘ𝟹 " + "(" + "64 ᴋʙᴘs" + ")", callback_data=cb_string_64.encode("UTF-8"))
+                ])
+                inline_keyboard.append([
                     InlineKeyboardButton(
                         "🎵 ᴍᴘ𝟹 " + "(" + "128 ᴋʙᴘs" + ")", callback_data=cb_string_128.encode("UTF-8"))
                 ])
@@ -229,7 +231,7 @@ async def echo(bot, update):
                 ])
                 inline_keyboard.append([                 
                     InlineKeyboardButton(
-                        "✔️ ᴄʟᴏsᴇ", callback_data='close')               
+                        "🔐 Close", callback_data='close')               
                 ])
         else:
             format_id = response_json["format_id"]
@@ -240,7 +242,7 @@ async def echo(bot, update):
                 "video", format_id, format_ext, randem)
             inline_keyboard.append([
                 InlineKeyboardButton(
-                    "🎬 sᴍᴇᴅɪᴀ",
+                    "🎬 Video",
                     callback_data=(cb_string_video).encode("UTF-8")
                 )
             ])
@@ -250,7 +252,7 @@ async def echo(bot, update):
                 "video", format_id, format_ext)
             inline_keyboard.append([
                 InlineKeyboardButton(
-                    "🎥 ᴠɪᴅᴇᴏ",
+                    "🎥 Video file",
                     callback_data=(cb_string_video).encode("UTF-8")
                 )
             ])
@@ -272,7 +274,7 @@ async def echo(bot, update):
             "video", "OFL", "ENON")
         inline_keyboard.append([
             InlineKeyboardButton(
-                "🎬 ᴍᴇᴅɪᴀ",
+                "🎬 Video",
                 callback_data=(cb_string_video).encode("UTF-8")
             )
         ])
