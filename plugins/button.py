@@ -106,7 +106,7 @@ async def youtube_dl_call_back(bot, update):
         if int(update.from_user.id) == int(user):
           if datetime.strptime(exp_req, '%Y-%m-%d %H:%M:%S.%f') > datetime.now():
             rem = datetime.strptime(exp_req, '%Y-%m-%d %H:%M:%S.%f') - datetime.now()
-            await update.reply_text("😴 Please wait {} for next process.".format(datetime.strptime(str(rem), '%H:%M:%S.%f').strftime('%H Hrs %M Mins %S Sec')))
+            await update.message.edit_text("😴 Please wait {} for next process.".format(datetime.strptime(str(rem), '%H:%M:%S.%f').strftime('%H Hrs %M Mins %S Sec')))
             return
     Config.ONE_BY_ONE.append(update.from_user.id)
     if not update.from_user.id in Config.TODAY_USERS:
