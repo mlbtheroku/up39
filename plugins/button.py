@@ -14,7 +14,7 @@ import math
 import os
 import shutil
 import time
-from datetime import datetime
+from datetime import datetime, timedelta
 from pyrogram import enums 
 from plugins.config import Config
 from plugins.script import Translation
