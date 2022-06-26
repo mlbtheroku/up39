@@ -1,2 +1,2 @@
-echo "starting Uploader Bot 2.0 ~@TheBotsPlanet";
+echo "5tarting UrI UpIoader B0t...! @Super_Botz";
 python3 -m bot
