@@ -59,3 +59,4 @@ class Config(object):
     BROADCAST_AS_COPY = bool(os.environ.get("BROADCAST_AS_COPY", "False"))
     ONE_BY_ONE = []
     TODAY_USERS = []
+    TIME_GAP = int(os.environ.get("TIME_GAP", 2))
