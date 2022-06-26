@@ -6,7 +6,8 @@ class Translation(object):
     
 <i>This is a URL Upload Bot!</i>
 <i>Please send me any Streaming (URL) Link, Then I will upload to Telegram as File/Video/Team Drive.</i>
-ℹ️Help <i>for more details...</i>
+
+ℹ️ Help <i>for more details...</i>
 © @Super_botz"""
     HELP_TEXT = """<b>How to use me?</b>
     
@@ -17,10 +18,9 @@ Send Streaming (URL) link from <a href=https://github.com/yt-dlp/yt-dlp/blob/mas
        
    <b>Example: (With Custom File Name)</b>
        <code>https://m.youtube.com/watch?v=5wSi4KC70Gw|How_to_download_zee5_and_mxplayer</code>
-   
-</i>
+       
 --------
-Send /me to know current plan details
+Send /me to know your TG ID
 © @Super_botz"""
     ABOUT_TEXT = """<b>➥ My Name :</b><code> UrI UpIoader R0b0t</code>
 <b>➥ Creator :</b> <a href="https://t.me/iam_durov_bot">Durov</a>
@@ -84,7 +84,7 @@ Send /me to know current plan details
     ANNO_UPLOAD = " UploadinG📤 \n\n To  anonfiles.com "
     BAY_UPLOAD = " UploadinG📤 \n\n To  bayfiles.com "
     GO_FILE_UPLOAD = " 📤UploadinG📤 \n\n To  gofile.io "
-    DOWNLOAD_START = "Dᴏᴡɴʟᴏᴀᴅɪɴɢ ᴛᴏ ᴍʏ sᴇʀᴠᴇʀ ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ  ⏳"
+    DOWNLOAD_START = "📥 Downloading in progress"
     UPLOAD_START = "📤 Upload in progress"
     RCHD_BOT_API_LIMIT = "size greater than maximum allowed size (50MB). Neverthless, trying to upload."
     RCHD_TG_API_LIMIT = "😐 Downloaded in {} seconds.\nDetected File Size: {}\nSorry. But, I cannot upload files greater than 2GB due to Telegram API limitations."
