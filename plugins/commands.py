@@ -45,9 +45,12 @@ async def rate(bot, update):
         
 @Client.on_message(filters.command(["me"]) & filters.private)
 async def me(bot, update):
+  try:
     await bot.send_message(
               chat_id=update.chat.id,
               text="Telegram ID : {}".format(update.from_user.id),
               parse_mode="html",
               disable_web_page_preview=True
     )
+  except Exception as e:
+    await update.reply_text(str(e))
